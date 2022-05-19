@@ -5,13 +5,15 @@ class Solution {
              r= x%10;
               x=x/10;
                 s=s*10+r;
-        }       
+        }
+        
         if(t==s)
         {
             return true;
         }
         else{
                        return false;
+
         }
     
     }
