@@ -9,20 +9,19 @@ int i=0;
         Arrays.sort(s);
         
         while(i<g.length && j<s.length){
-            if(g[i]> s[j]){ 
-            j++;
-            }
+    
             
-            else if(s[j]>= g[i]){
+            if(s[j]>= g[i]){
                 res++;
                  i++;
+            }
             j++;
                 
             }
+         return res;
            
         }
         
-        return res;
+       
         
     }
-}
