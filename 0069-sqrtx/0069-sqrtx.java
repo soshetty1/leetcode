@@ -3,14 +3,14 @@ class Solution {
    if (x < 2) return x;
 
     long num;
-    int pivot;
+    int mid;
         int left = 2, right = x / 2;
     while (left <= right) {
-      pivot = left + (right - left) / 2;
-      num = (long)pivot * (long)pivot;
-      if (num > x) right = pivot - 1;
-      else if (num < x) left = pivot + 1;
-      else return pivot;
+      mid = left + (right - left) / 2;
+      num = (long)mid * (long)mid;
+      if (num > x) right = mid - 1;
+      else if (num < x) left = mid + 1;
+      else return mid;
     }
 
     return right;
