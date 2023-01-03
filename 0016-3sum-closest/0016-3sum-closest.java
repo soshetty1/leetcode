@@ -14,7 +14,7 @@ class Solution {
                 int min=Math.abs( target- sum);
                  
                  
-                if(min< Math.abs(temp)){
+                if(min< temp){
                    res = sum;
                     temp=min;
                 }
